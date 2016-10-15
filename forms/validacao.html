@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style media="screen">
+		.error{
+			border: 1px solid red;
+		}
+	</style>
+	<body>
+		<form  method="get" name="formPrincipal" onsubmit="return validarForm()">
+			<label>Nome:</label><br />
+			<input type="text" name="nome" onblur="validarElementoNome()"/><br />
+			<label>Idade:</label><br />
+			<input type="number" name="idade" onblur="validaElementoIdade()" /><br />
+			<label>Cidades:</label><br />
+			<select name="cidades" onchange="validaElementoCidades()">
+				<option value=""></option>
+				<option value="udi">Uberlândia</option>
+				<option value="mhs">Morrinhos</option>
+				<option value="gyn">Goiânia</option>
+			</select><br />
+	<br />
+			<input type="submit" value="Não envie" >
+		</form>
+		<script src="scripts.js" charset="utf-8"></script>
+	</body>
+</html>

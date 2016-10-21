@@ -15,6 +15,8 @@
 			<input type="text" name="nome" onblur="validarElementoNome()"/><br />
 			<label>Idade:</label><br />
 			<input type="number" name="idade" onblur="validaElementoIdade()" /><br />
+			<label>CEP:</label><br />
+			<input type="text" name="cep" onblur="validaElementoCEP()" /><br />
 			<label>Cidades:</label><br />
 			<select name="cidades" onchange="validaElementoCidades()">
 				<option value=""></option>
@@ -22,6 +24,20 @@
 				<option value="mhs">Morrinhos</option>
 				<option value="gyn">Goiânia</option>
 			</select><br />
+			<label>Sexo:</label><br />
+			<div class="sexo">
+				<input type="radio" name="sexo" value="M"> Masculino <br />
+				<input type="radio" name="sexo" value="F"> Feminino <br />
+			</div>
+
+			<label>Línguas Faladas:</label><br />
+			<div class="linguas">
+				<input type="checkbox" name="linguas" value="PT-BR">Português <br />
+				<input type="checkbox" name="linguas" value="US"> Inglês <br />
+				<input type="checkbox" name="linguas" value="ES"> Espanhol <br />
+				<input type="checkbox" name="linguas" value="FR"> Francês <br />
+			</div>
+
 	<br />
 			<input type="submit" value="Não envie" >
 		</form>

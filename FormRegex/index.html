@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form Validation WITH Regex</title>
+		<style>
+			.error{
+				border: 2px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<form name="inter" onsubmit="return validaSexo()">
+			<label>Nome:</label><br />
+			<input type="text" name="nome" onblur="validaNome()"/><br />
+			<label>Data Nascimento:</label><br />
+			<input type="text" name="dtNascimento" onblur="validaDate()" /><br />
+			<label>Idade:</label><br />
+			<input type="text" name="idade" onblur="validaIdade()"/><br />
+			<label>E-mail:</label><br />
+			<input type="email" name="email" onblur="validaEmail()"/><br />
+			<label>CPF:</label><br />
+			<input type="text" name="cpf" onblur="validaCPF()"/><br />
+			<label>Telefone:</label><br />
+			<input type="tel" name="telefone" onblur="validaTelefone()"/><br />
+			<label>Sexo:</label><br />
+			<div class="sexo">
+				<input type="radio" name="sexo" value="M"> Masculino <br />
+				<input type="radio" name="sexo" value="F"> Feminino <br />
+			</div>
+			<label>Línguas Faladas:</label><br />
+			<div class="linguas">
+				<input type="checkbox" name="linguas" value="PT-BR">Português <br />
+				<input type="checkbox" name="linguas" value="US"> Inglês <br />
+				<input type="checkbox" name="linguas" value="ES"> Espanhol <br />
+				<input type="checkbox" name="linguas" value="FR"> Francês <br />
+			</div>
+			<label>Estado:</label><br />
+			<select name="estado" onchange="validaEstado()">
+				<option value=""></option>
+				<option value="mg">Minas Gerais</option>
+				<option value="go">Goiás</option>
+				<option value="sp">São Paulo</option>
+			</select><br />
+
+			<label>Cidade:</label><br />
+			<select name="cidade" onchange="validaCidade()">
+				<option value=""></option>
+			</select><br />
+
+			<br />
+			<input type="submit" name="submit" value="Enviar"/>
+		</form>
+		<script src="script.js" charset="utf-8"></script>
+	</body>
+</html>

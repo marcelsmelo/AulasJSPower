@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Teste</title>
+		<script src="script.js" charset="utf-8"></script>
+		<style>
+			.erroLogin{
+				color: red;
+			}
+		</style>
+	</head>
+	<body onload="verificaTelaLogin()">
+		<h1>Login</h1>
+		<h1 class="erroLogin"></h1>
+		<form onsubmit="return logar()" name="login" action="admin.html">
+			<label>Username:</label><br>
+			<input type="text" name="username" /><br>
+			<label>Password:</label><br>
+			<input type="password" name="password" /><br>
+			<input type="submit" name="button" value="Logar" />
+		</form>
+
+	</body>
+</html>
